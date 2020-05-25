@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="OneBanc.css">
+    <link rel="icon" href="https://media-exp1.licdn.com/dms/image/C560BAQHBrB_Xebde4g/company-logo_200_200/0?e=2159024400&v=beta&t=dFSdYJPbkRJhm8ctRjXKtN6mPDKaUxebsMAqkkrNv1k" type="image/x-icon">
+
+    <title>OneBanc - EARN | TRACK | INVEST | GROW </title>
+
+</head>
+
+<body>
+    <div class="text-left">
+
+        <img src="https://onebanc.ai/pics/logo_onebanc.png" alt="" style="width:300px;height:100px;"><br><br>
+
+
+        <div class="text-animate">
+            RE:<br> THINK
+            <br>
+            <span id="anim"></span>
+        </div>
+
+        <div class="text-p">
+            We are a Neo Bank and are here to re-imagine <br> and re-invent Banking. We are cool and simply <br> awesome!
+        </div>
+
+        <div class="text">
+            Get an early invitation for our Beta release
+        </div>
+
+        <div>
+            <input type="email" id="mail" placeholder="Enter Email Address" maxlength="50" size="40">
+            <button onclick="get_mail()" type="button" id="btn1" name="button"> <img src="https://p.kindpng.com/picc/s/151-1519502_computer-icons-arrow-symbol-architecture-right-arrow-icon.png" alt="" style="height:10px;width:10px;"> </button> <br>
+            <label id="lbl" style="visibility: hidden;">Please, provide an email</label>
+        </div>
+
+        <div class="row">
+            <img src="https://onebanc.ai/pics/qr_code.png" alt="">
+        </div>
+
+        <p class="text-last" >2020 © OneBanc Technologies Pvt. Ltd.</p>
+
+    </div>
+
+    <div class="image">
+    <div class="main-image">
+      <img src="https://onebanc.ai/pics/onebanc_man_mob.png" alt="middle">
+    </div>
+
+    <div class="image-container loan">
+      <div class="side-image-div">
+        <img class="side-image" src="https://cdn0.iconfinder.com/data/icons/money-2-3/66/174-512.png" alt="loan">
+      </div>
+      <div class="title">
+        Loan
+      </div>
+    </div>
+
+    <div class="image-container rewards">
+      <div class="side-image-div">
+        <img class="side-image" src="https://getdrawings.com/free-icon-bw/reward-points-icon-20.png" alt="rewards">
+      </div>
+      <div class="title">
+        Rewards
+      </div>
+    </div>
+
+    <div class="image-container savings">
+      <div class="side-image-div">
+        <img class="side-image" src="https://i.pinimg.com/originals/0e/47/f8/0e47f863552c82c0d9a8ea45f3ecfec4.png" alt="savings">
+      </div>
+      <div class="title">
+        Savings
+      </div>
+    </div>
+
+    <div class="image-container investments">
+      <div class="side-image-div">
+        <img class="side-image" src="https://cdn0.iconfinder.com/data/icons/stock-investment-1/66/29-512.png" alt="investments">
+      </div>
+      <div class="title">
+        Investments
+      </div>
+    </div>
+
+
+    <div class="image-container forex">
+      <div class="side-image-div">
+        <img class="side-image" src="https://www.kvb.co.in/img/icons/cards.svg" alt="forex">
+      </div>
+      <div class="title">
+        Forex
+      </div>
+    </div>
+
+
+    <div class="image-container cards">
+      <div class="side-image-div">
+        <img class="side-image" src="https://cdn.iconscout.com/icon/premium/png-512-thumb/atm-cards-1726196-1466863.png" alt="cards">
+      </div>
+      <div class="title">
+        Cards
+      </div>
+    </div>
+
+
+
+    <div class="image-container analytics">
+      <div class="side-image-div">
+        <img class="side-image" src="https://pngimage.net/wp-content/uploads/2019/05/google-analytics-png-icon-.png" alt="analytics">
+      </div>
+      <div class="title">
+        Analytics
+      </div>
+    </div>
+
+
+    <div class="image-container payments">
+      <div class="side-image-div ">
+        <img class="side-image" src="https://cdn0.iconfinder.com/data/icons/payments-3/66/26-512.png" alt="payments">
+      </div>
+      <div class="title">
+        Payments
+      </div>
+    </div>
+
+    <div class="image-container support">
+      <div class="side-image-div">
+        <img class="side-image" src="https://cdn4.iconfinder.com/data/icons/rcons-user-line/32/operator_support_receptionist_help_headset-512.png" alt="support">
+      </div>
+      <div class="title">
+        Support
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+    <script type="text/javascript">
+        const arr = ['REWARDS', 'SAVINGS', 'INVESTMENTS', 'FOREX', 'ANALYTICS', 'CARDS', 'PAYMENTS', 'LOAN', 'SUPPORT'];
+        var i = 0;
+        var element;
+        element = document.getElementById("anim");
+        slide();
+
+        function slide() {
+            element.innerHTML = arr[i];
+            element.style.opacity = 1;
+            setTimeout(next, 1000);
+        }
+
+        function next() {
+            i++;
+            element.style.opacity = 0;
+            if (i > (arr.length - 1)) {
+                i = 0;
+            }
+            setTimeout(slide, 1000);
+        }
+
+
+
+
+
+
+
+        function get_mail() {
+            var str = dcoument.getElementById("mail").value;
+            var regx = /^([a-z0-9\.-]+)@([a-zA-Z0-9\.-]+).([a-z]{2,8})$/
+
+            if (str.trim() == "") {
+                document.getElementById("lbl").style.visibility = "visible";
+            } else if (regx.test(str)) {
+                document.getElementById("lbl").innerHTML = "valid"
+                document.getElementById("lbl").style.visibility = "visible"
+            } else {
+                document.getElementById("lbl").innerHTML = "Please, provide a valid email"
+                document.getElementById("lbl").style.visibility = "visible"
+            }
+        }
+    </script>
+</body>
+
+</html>

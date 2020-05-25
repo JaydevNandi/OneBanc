@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-image: url(https://wallpapertag.com/wallpaper/full/8/1/9/454373-solid-background-images-2560x1600-ipad-retina.jpg);
+  width: 100%;
+  float: left;
+  /* background: linear-gradient(180deg,rgba(3,135,209,1) 0%,rgba(1,85,132,1) 100%); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.text-left{
+  padding: 40px;
+  color: white;
+}
+.text-animate{
+  font-size: 4vw;
+}
+.text-p{
+  font-size: 20px;
+  padding-top: 20px;
+}
+.text{
+  font-size: 17px;
+  padding-top: 30px;
+}
+#mail{
+  padding: 5px 12px 5px 12px;
+  font-size: 0.8em;
+}
+#btn1{
+  padding: 5px 12px 5px 12px;
+  font-size: 0.8em;
+}
+
+#anim{
+	opacity:0;
+	transition:opacity 0.6s linear 0s;
+}
+.text-last{
+  padding-top:20px;
+  font-size:15px;
+}
+
+.text-left, .image{
+  display: inline-block;
+}
+
+.side-image{
+  width: 30px;
+}
+
+.image-container{
+  position: absolute;
+  opacity: 0.5;
+}
+
+.image{
+  position: relative;
+  float: right;
+  margin-right: 155px;
+  margin-top: 100px;
+}
+
+.main-image{
+  margin-top: 100px;
+}
+
+.cards{
+  bottom: 15%;
+}
+
+.payments{
+  bottom: 40%;
+  left: -9px;
+}
+
+.loan{
+  top: 22%;
+  left: 39px;
+}
+
+.support{
+  top: 8%;
+  left: 143px;
+}
+
+.rewards{
+  top: 7%;
+  left: 252px;
+}
+
+.savings{
+  top: 8%;
+  right: 115px;
+}
+
+.investments{
+  top: 22%;
+  right: 11px;
+}
+
+.forex{
+  bottom: 39%;
+  right: 1px;
+}
+
+.analytics{
+  bottom: 15%;
+  right: -32px;
+}
+
+.image-container > .side-image-div{
+  text-align: center;
+}
+.image :hover{
+  opacity: 1;
+  transition: 0.4s;
+}
+.image-container:hover{
+    transform: scale(1.1);
+}
+.title{
+  font-size: 1.1rem;
+  color: white;
+}
